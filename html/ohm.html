@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Define que el documento es HTML5 -->
+<html lang="en">
+<!-- El documento está en inglés, debería ser 'es' si es para uso en español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura la visualización adecuada y una escala inicial en dispositivos móviles -->
+    <title>Ley de OHM - Calculadora</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="icon" href="../img/ohm.png">
+    <!-- Establece un ícono para la pestaña del navegador -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Vincula la hoja de estilos de Bootstrap para estilos y componentes -->
+    <link rel="stylesheet" href="../css/U_Style.css"/>
+    <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconecta con Google Fonts para mejorar la carga de las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Permite recursos de origen cruzado para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Importa y aplica una fuente personalizada de Google Fonts -->
+</head>
+<body>
+     <!-- Aquí comienzan las tres calculadoras para resistencia, corriente y voltaje, cada una en su propio contenedor -->
+    <div class="container">
+    <h2>Calculadora de Resistencia:</h2>
+    <form id="resistenciaForm">
+        <label for="corriente">Valor de la corriente (amperios):</label>
+        <input type="text" id="corriente" required>
+        <br><br>
+        <label for="voltaje">Valor del voltaje (voltios):</label>
+        <input type="text" id="voltaje" required>
+        <br><br>
+        <input type="submit" value="Calcular Resistencia">
+    </form>
+    <p>Resistencia: <span id="resultadoResistencia"></span> Ohms</p>
+
+</div>
+
+<div class="container">
+    <h2>Calculadora de Corriente:</h2>
+    <form id="corrienteForm">
+        <label for="voltajeCorriente">Valor del voltaje (voltios):</label>
+        <input type="text" id="voltajeCorriente" required>
+        <br><br>
+        <label for="resistenciaCorriente">Valor de la resistencia (ohms):</label>
+        <input type="text" id="resistenciaCorriente" required>
+        <br><br>
+        <input type="submit" value="Calcular Corriente">
+    </form>
+    <p>Corriente: <span id="resultadoCorriente"></span> Amperios</p>
+</div>
+
+<div class="container">
+    <h2>Calculadora de Voltaje:</h2>
+    <form id="voltajeForm">
+        <label for="corrienteVoltaje">Valor de la corriente (amperios):</label>
+        <input type="text" id="corrienteVoltaje" required>
+        <br><br>
+        <label for="resistenciaVoltaje">Valor de la resistencia (ohms):</label>
+        <input type="text" id="resistenciaVoltaje" required>
+        <br><br>
+        <input type="submit" value="Calcular Voltaje">
+    </form>
+    <p>Voltaje: <span id="resultadoVoltaje"></span> Voltios</p>
+
+    </div>
+    
+<script src = "../script/Ohm.js"></script>
+    <!-- Vincula el archivo JavaScript que contiene la lógica de la calculadora -->
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->

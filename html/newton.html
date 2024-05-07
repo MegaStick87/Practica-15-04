@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Define que el documento es HTML5 -->
+<html lang="en">
+<!-- El documento está en inglés, debería ser 'es' si es para uso en español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura la visualización adecuada y una escala inicial en dispositivos móviles -->
+    <title>Newton - Calculadora</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="icon" href="../img/newton2.png">
+    <!-- Establece un ícono para la pestaña del navegador -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Vincula la hoja de estilos de Bootstrap para estilos y componentes -->
+    <link rel="stylesheet" href="../css/U_Style.css">
+    <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconecta con Google Fonts para mejorar la carga de las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Permite recursos de origen cruzado para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Importa y aplica una fuente personalizada de Google Fonts -->
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de la Segunda Ley de Newton</h2>
+        <!-- Título principal visible en la página -->
+        <form id="newtonForm">
+            <!-- Formulario para calcular la segunda ley de Newton -->
+            <label for="variable">Calcular:</label>
+            <!-- Etiqueta para la selección de qué calcular -->
+            <select id="variable" required onchange="updateFields()">
+                <!-- Menú desplegable para seleccionar la variable a calcular -->
+                <option value="">Seleccione una opción...</option>
+                <!-- Opción predeterminada -->
+                <option value="fuerza">Fuerza</option>
+                <!-- Opción para calcular fuerza -->
+                <option value="masa">Masa</option>
+                <!-- Opción para calcular masa -->
+                <option value="aceleracion">Aceleración</option>
+                <!-- Opción para calcular aceleración -->
+            </select>
+            <br><br>
+            <label for="input1">Primer valor:</label>
+            <!-- Etiqueta para el primer valor de entrada -->
+            <input type="text" id="input1" required>
+            <!-- Campo de entrada para el primer valor -->
+            <br><br>
+            <label for="input2">Segundo valor:</label>
+            <!-- Etiqueta para el segundo valor de entrada -->
+            <input type="text" id="input2" required>
+            <!-- Campo de entrada para el segundo valor -->
+            <br><br>
+            <input type="submit" value="Calcular">
+            <!-- Botón para enviar el formulario y realizar el cálculo -->
+        </form>
+        <p>Resultado: <span id="resultadoNewton"></span></p>
+        <!-- Párrafo para mostrar el resultado del cálculo -->
+    </div>
+
+    <script src="../script/Newton.js"></script>
+    <!-- Vincula el archivo JavaScript que contiene la lógica de la calculadora -->
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->

@@ -1,0 +1,62 @@
+/* ALL HTML STYLE */
+body {
+    background-size: cover; /* El fondo cubre completamente el cuerpo sin ser recortado */
+    animation: fondoAnimadoRetro 20s ease infinite; /* Aplica una animación de fondo que cambia de posición de forma continua */
+    background: linear-gradient(45deg, #7d7e7d, #0b486b, #3b8686, #79bd9a, #c0d6df); /* Fondo con gradiente lineal en varios tonos */
+    background-size: 300% 300%; /* Aumenta el tamaño del fondo para permitir una animación fluida */
+    color: #fff; /* Establece el color de texto a blanco */
+    text-shadow: 2px 2px 4px #000000; /* Sombra de texto para mejorar la legibilidad */
+    font-family: "Bebas Neue", sans-serif; /* Fuente personalizada para todo el texto */
+    font-weight: 400; /* Peso de la fuente normal */
+    font-style: normal; /* Estilo de la fuente normal, sin cursiva */
+}
+
+@keyframes fondoAnimadoRetro {
+    0% { background-position: 0% 50%; } /* Posición inicial del fondo */
+    50% { background-position: 100% 50%; } /* Mueve el fondo al extremo opuesto en el medio de la animación */
+    100% { background-position: 0% 50%; } /* Regresa el fondo a la posición inicial */
+}
+
+.container {
+    width: 90%; /* Ancho del contenedor al 90% del elemento padre */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 2rem auto; /* Margen superior e inferior de 2rem y centrado horizontalmente */
+    padding: 2rem; /* Relleno interno en todas direcciones */
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque detrás del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde blanco con transparencia */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+}
+
+input[type="text"], select {
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    padding: 10px; /* Relleno interno */
+    margin: 6px 0; /* Margen superior e inferior de 6px */
+    display: inline-block; /* Alineamiento en línea, permite que los elementos estén uno al lado del otro */
+    border: 1px solid #ccc; /* Borde sólido con color gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* El ancho y alto del elemento incluyen el contenido, relleno y borde */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con mayor opacidad */
+}
+
+input[type="submit"] {
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    background-color: #256aff; /* Color de fondo azul brillante */
+    color: white; /* Texto en color blanco */
+    padding: 14px 20px; /* Relleno interno más generoso para mejor clicabilidad */
+    margin: 8px 0; /* Margen superior e inferior */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+input[type="submit"]:hover {
+    background-color: #0051ff; /* Color de fondo azul más oscuro al pasar el mouse */
+}
+
+h1 {
+    color: #fff; /* Texto en color blanco */
+    text-align: center; /* Alineación central del texto */
+}

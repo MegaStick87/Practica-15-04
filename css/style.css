@@ -1,0 +1,43 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    animation: fondoAnimadoRetro 20s ease infinite; /* Aplica una animación de fondo que dura 20 segundos y se repite indefinidamente */
+    background: linear-gradient(45deg, #7d7e7d, #0b486b, #3b8686, #79bd9a, #c0d6df); /* Fondo con gradiente lineal en múltiples tonos de azul y gris */
+    background-size: 300% 300%; /* Aumenta el tamaño del fondo para que la animación sea más fluida */
+    color: #fff; /* Establece el color del texto a blanco */
+    display: flex; /* Usa Flexbox para el diseño */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del cuerpo */
+    align-items: center; /* Centra el contenido verticalmente dentro del cuerpo */
+    height: 100vh; /* Ajusta la altura del cuerpo a toda la altura de la ventana del navegador */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    font-family: "Bebas Neue", sans-serif; /* Establece la fuente a 'Bebas Neue' para todo el texto */
+    font-weight: 400; /* El peso de la fuente es normal */
+    font-style: normal; /* El estilo de la fuente es normal, no cursiva */
+}
+
+/* Estilo para las imágenes que actúan como portada */
+.Portada {
+    filter: invert(100%); /* Invierte los colores de la imagen */
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto; /* La altura de la imagen se ajusta automáticamente para mantener la proporción */
+    max-width: 300px; /* El ancho máximo de la imagen es 300px */
+    padding-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo para los contenedores principales dentro de la página */
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco con un 20% de opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+    backdrop-filter: blur(10px); /* Filtro de desenfoque en el fondo para un efecto visual suave */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde blanco con un 30% de opacidad */
+    padding: 20px; /* Espaciado interno */
+    width: 600px; /* Ancho fijo */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Definición de la animación del fondo */
+@keyframes fondoAnimadoRetro {
+    0% { background-position: 0% 50%; } /* Inicio de la animación */
+    50% { background-position: 100% 50%; } /* Mueve el fondo al otro extremo en la mitad del tiempo */
+    100% { background-position: 0% 50%; } /* Regresa el fondo a la posición inicial */
+}

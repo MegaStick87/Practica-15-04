@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Define que el documento es HTML5 -->
+<html lang="es">
+<!-- El documento está en español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura la visualización adecuada y una escala inicial en dispositivos móviles -->
+    <title>Menú de leyes físicas</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="icon" href="img/main.png" >
+    <!-- Establece un ícono para la pestaña del navegador -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Vincula la hoja de estilos de Bootstrap para estilos y componentes -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconecta con Google Fonts para mejorar la carga de las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Permite recursos de origen cruzado para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Importa y aplica una fuente personalizada de Google Fonts -->
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculos de física elemental:</h1>
+        <!-- Título principal visible en la página -->
+        <img src="img/potrait.png" alt="Portada" class="Portada">
+        <!-- Imagen decorativa para la página -->
+        <div class="dropdown">
+        <!-- Contenedor para un menú desplegable -->
+        <button class="btn btn-primary dropdown-toggle" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            Seleccione una Ley
+        </button>
+        <!-- Botón para desplegar el menú de opciones -->
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <!-- Menú desplegable con enlaces a diferentes leyes físicas -->
+            <a class="dropdown-item" href="html/ohm.html">Ley de Ohm</a>
+            <a class="dropdown-item" href="html/coulomb.html">Ley de Coulomb</a>
+            <a class="dropdown-item" href="html/newton.html">Ley de Newton</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<!-- Incluye jQuery para funcionalidad básica -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Incluye Popper para el manejo de tooltips y popovers -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Incluye JavaScript de Bootstrap para componentes interactivos -->
+
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->

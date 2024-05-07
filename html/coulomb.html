@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Define que el documento es HTML5 -->
+<html lang="en">
+<!-- El documento está en inglés, debería ser 'es' si es para uso en español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura la visualización adecuada y una escala inicial en dispositivos móviles -->
+    <title>Coulomb - Calculadora</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="icon" href="../img/coulomb.png">
+    <!-- Establece un ícono para la pestaña del navegador -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Vincula la hoja de estilos de Bootstrap para estilos y componentes -->
+    <link rel="stylesheet" href="../css/U_Style.css">
+    <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconecta con Google Fonts para mejorar la carga de las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Permite recursos de origen cruzado para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Importa y aplica una fuente personalizada de Google Fonts -->
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de la Ley de Coulomb</h2>
+        <!-- Título principal visible en la página -->
+        <form id="coulombForm">
+            <!-- Formulario para calcular la fuerza de Coulomb -->
+            <label for="carga1">Valor de la primera carga (coulombs):</label>
+            <input type="text" id="carga1" required>
+            <!-- Campo para ingresar la primera carga -->
+            <br><br>
+            <label for="carga2">Valor de la segunda carga (coulombs):</label>
+            <input type="text" id="carga2" required>
+            <!-- Campo para ingresar la segunda carga -->
+            <br><br>
+            <label for="distancia">Distancia entre cargas (metros):</label>
+            <input type="text" id="distancia" required>
+            <!-- Campo para ingresar la distancia entre las cargas -->
+            <br><br>
+            <input type="submit" value="Calcular Fuerza">
+            <!-- Botón para enviar el formulario y calcular la fuerza -->
+        </form>
+        <p>Fuerza: <span id="resultadoCoulomb"></span> Newtons</p>
+        <!-- Muestra el resultado del cálculo -->
+    </div>
+
+    <script src="../script/Coulomb.js"></script>
+    <!-- Vincula el archivo JavaScript que contiene la lógica del cálculo -->
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->
